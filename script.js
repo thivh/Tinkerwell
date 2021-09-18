@@ -22,56 +22,56 @@
 
 
 // new data, edited to fit the current code
-const books = {
-    nol : {
-        "judul": "Untuk Apa Seni",
-        "url-foto" : "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1392706216l/20837627.jpg",
-        "harga" : "Rp60000,-",
-        "deskripsi" : "Penulis : Bambang Sugiharto, dkk<br>Penerbit : Pustaka Matahari<br>Penyunting : Bambang Sugiharto"
-    },
+// const books = {
+//     nol : {
+//         "judul": "Untuk Apa Seni",
+//         "url-foto" : "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1392706216l/20837627.jpg",
+//         "harga" : "Rp60000,-",
+//         "deskripsi" : "Penulis : Bambang Sugiharto, dkk<br>Penerbit : Pustaka Matahari<br>Penyunting : Bambang Sugiharto"
+//     },
 
-    satu : {
-        "judul" : "Warisan Sejarah<br>Arianisme",
-        "url-foto" : "https://pustaka.iainbukittinggi.ac.id/wp-content/uploads/2018/12/arian-198x300.jpg",
-        "harga" : "Rp97000,-",
-        "deskripsi" : "Judul asli:<br>Archetypal Heresy: Arianism Through the Centuries<br>Penulis: Maurice Wiles<br>Penerjemah: Zaenal Muttaqin<br>penerbit: Pustaka Matahari<br>Penerbit-asli: Oxford University Press, Inc."
-    },
+//     satu : {
+//         "judul" : "Warisan Sejarah<br>Arianisme",
+//         "url-foto" : "https://pustaka.iainbukittinggi.ac.id/wp-content/uploads/2018/12/arian-198x300.jpg",
+//         "harga" : "Rp97000,-",
+//         "deskripsi" : "Judul asli:<br>Archetypal Heresy: Arianism Through the Centuries<br>Penulis: Maurice Wiles<br>Penerjemah: Zaenal Muttaqin<br>penerbit: Pustaka Matahari<br>Penerbit-asli: Oxford University Press, Inc."
+//     },
 
-    dua : {
-        "judul": "Sejarah Filsafat Kontemporer:<br>Jerman dan Inggris",
-        "url-foto": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551165807l/4309628._SX318_.jpg",
-        "harga": "Rp70000,-",
-        "deskripsi": "Penulis: K. Bertens<br>Penerbit: PT Gramedia Pustaka Utama"
-    },
+//     dua : {
+//         "judul": "Sejarah Filsafat Kontemporer:<br>Jerman dan Inggris",
+//         "url-foto": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551165807l/4309628._SX318_.jpg",
+//         "harga": "Rp70000,-",
+//         "deskripsi": "Penulis: K. Bertens<br>Penerbit: PT Gramedia Pustaka Utama"
+//     },
 
-    tiga : {
-        "judul": "Sejarah Filsafat<br>Kontemporer: Prancis",
-        "url-foto": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1243418656l/6498943.jpg",
-        "harga": "Rp63000,-",
-        "deskripsi": "Penulis: K. Bertens<br>Penerbit: PT Gramedia Pustaka Utama"
-    },
+//     tiga : {
+//         "judul": "Sejarah Filsafat<br>Kontemporer: Prancis",
+//         "url-foto": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1243418656l/6498943.jpg",
+//         "harga": "Rp63000,-",
+//         "deskripsi": "Penulis: K. Bertens<br>Penerbit: PT Gramedia Pustaka Utama"
+//     },
 
-    empat : {
-        "judul": "Semiotika dan<br>Hipersemiotika",
-        "url-foto": "https://s2.bukalapak.com/img/7734600261/large/IMG_20170912_134621_scaled.jpg",
-        "harga": "Rp120000,-",
-        "deskripsi": "Penulis: Yasraf Amir Piliang<br>Penerbit: Pustaka Matahari"
-    },
+//     empat : {
+//         "judul": "Semiotika dan<br>Hipersemiotika",
+//         "url-foto": "https://s2.bukalapak.com/img/7734600261/large/IMG_20170912_134621_scaled.jpg",
+//         "harga": "Rp120000,-",
+//         "deskripsi": "Penulis: Yasraf Amir Piliang<br>Penerbit: Pustaka Matahari"
+//     },
 
-    lima : {
-        "judul": "Epistemologi Dasar",
-        "url-foto": "https://togamas.com/css/images/items/potrait/JPEGG_5905_Epistemologi_Dasar.jpg",
-        "harga": "60000,-",
-        "deskripsi":"Penulis: J. Sudarminta<br>Penerbit: Penerbit Kanisius"
-    },
+//     lima : {
+//         "judul": "Epistemologi Dasar",
+//         "url-foto": "https://togamas.com/css/images/items/potrait/JPEGG_5905_Epistemologi_Dasar.jpg",
+//         "harga": "60000,-",
+//         "deskripsi":"Penulis: J. Sudarminta<br>Penerbit: Penerbit Kanisius"
+//     },
 
-    enam : {
-        "judul": "Teori-Teori Etika",
-        "url-foto": "https://s2.bukalapak.com/img/2027491742/large/Buku_Teori_Teori_Etika_karya_Gordon_Graham.jpg",
-        "harga": "Rp96000,-",
-        "deskripsi": "Penulis: Nusamedia<br>Penerbit: Gordon Graham"
-    }
-}
+//     enam : {
+//         "judul": "Teori-Teori Etika",
+//         "url-foto": "https://s2.bukalapak.com/img/2027491742/large/Buku_Teori_Teori_Etika_karya_Gordon_Graham.jpg",
+//         "harga": "Rp96000,-",
+//         "deskripsi": "Penulis: Nusamedia<br>Penerbit: Gordon Graham"
+//     }
+// }
 
 // making an index array to point the objects
 const index = [];
