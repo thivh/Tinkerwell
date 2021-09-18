@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="shopcart.css">
 
-    <title>Webede Exercise</title>
+    <title>Tinkerwell</title>
 </head>
 <body>
     <?php
         session_start();
     ?>
     <div class="header">
-        <h1 id="header">Bukupedia</h1>
+        <h1 id="header">Tinkerwell</h1>
     </div>
     <a href="index.php" class=back>
         <h1>&#10094;</h1>

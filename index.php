@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-    <title>Webede Exercise</title>
+    <title>Tinkerwell</title>
 </head>
 <body>
     <!-- start session to check if has logged in -->
@@ -78,7 +78,7 @@
 
     <div class="container">
         <div class="header">
-            <h1 id="header">Bukupedia</h1>
+            <h1 id="header">Tinkerwell</h1>
             <a href="shopcart.php" class="logocontainer">
                 <span class="material-icons" id="shopchartlogo">
                     shopping_cart
