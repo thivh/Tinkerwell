@@ -29,7 +29,7 @@
             foreach($unameAndPW as $value){
                 if($_POST['uname'] == $value[0] && $_POST['pasw'] == $value[1]){
                     $_SESSION['loggedIn'] = true;
-                    header('Location: http://localhost/wbd-2021-13519157-ryandito-diandaru/SimpleWebApp/index.php');
+                    header('Location: index.php');
                     $_SESSION['idxNow'] = 0;
                     exit;
                 }
