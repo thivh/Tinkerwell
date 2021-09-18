@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="tw.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="112.5"
+     inkscape:cy="83"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     width="500mm" />
+  <defs
+     id="defs2">
+    <g
+       id="g180" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       xml:id="surface1"
+       id="surface1"
+       transform="matrix(0.26678481,0,0,0.26678481,-85.399608,-131.38749)"
+       style="fill:#0d6dfd;fill-opacity:1">
+      <path
+         id="rect188"
+         style="fill:#0d6dfd;fill-opacity:1;stroke:none;stroke-width:0.999997"
+         d="M 320.1061,492.47615 V 867.47614 H 695.10609 V 492.47615 Z m 114.25487,75.7002 h 146.19874 v 25.49998 h -27.56983 v 0.022 h -32.01562 v 62.44775 l 27.84082,92.79492 24.9375,-95.51513 h 27.95361 L 566.33021,778.8326 h -33.24902 l -25.75342,-84.1333 h -0.14941 l -25.75342,84.1333 h -32.8916 L 413.15883,653.42585 h 27.9375 l 24.76611,94.812 28.39307,-94.51025 v -60.02929 h -32.01563 v -0.022 h -27.87891 z" />
+      <g
+         id="g444"
+         transform="translate(-75.360976,20.455122)"
+         style="fill:#0d6dfd;fill-opacity:1">
+        <g
+           style="fill:#0d6dfd;fill-opacity:1"
+           id="g196">
+          <g
+             transform="translate(138.07031,202.22214)"
+             id="g194"
+             style="fill:#0d6dfd;fill-opacity:1" />
+        </g>
+        <g
+           style="fill:#0d6dfd;fill-opacity:1"
+           id="g202">
+          <g
+             transform="translate(90.39591,286.35573)"
+             id="g200"
+             style="fill:#0d6dfd;fill-opacity:1" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
