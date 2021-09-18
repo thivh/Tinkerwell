@@ -1,73 +1,127 @@
-<?php
- session_start();
- if(!(isset($_SESSION["username"]))) {
-  header("Location: login.php");
- }
-?>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico" />
-    <title>Boocoo</title>
-    <style>
-        h1 {
-        text-align: center;
-        font-size: 200px;
-        color: rgb(165, 40, 165);
-        }    
-        body {
-        background: #91a849;
-        color: #2b1f1f;
-        margin: 0;
-        min-height: 100%;
-        height: 100%;
-        position:relative;
-      }
-    </style>
-  </head>
-  <body onload="main1()">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.php"><img src="static/favicon-32x32.png" alt="Boocoo" style="height:100%"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-              <a class="nav-link active" aria-current="page" href="index.php">About</a>
-              <a class="nav-link active" aria-current="page" href="cart.php">Cart</a>
-              <a class="nav-link active right1" aria-current="page" href="logout.php">Logout</a>
-            </div>
-          </div>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Webede Exercise</title>
+</head>
+<body>
+    <!-- start session to check if has logged in -->
+    <?php
+        session_start();
+        if(!(isset($_SESSION['loggedIn'])) || $_SESSION['loggedIn'] !== true){
+            header('Location: http://localhost/wbd-2021-13519157-ryandito-diandaru/SimpleWebApp/login.php');
+            exit;
+        }
+    ?>
+
+    <!-- hardcoded data -->
+    <?php
+        $idxNow = $_SESSION['idxNow'];
+        $items = [
+            [
+                "judul" => "Untuk Apa Seni",
+                "url-foto" => "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1392706216l/20837627.jpg",
+                "harga" => "Rp60000,-",
+                "deskripsi" => "Penulis : Bambang Sugiharto, dkk<br>Penerbit : Pustaka Matahari<br>Penyunting : Bambang Sugiharto"
+            ],
+            [
+                "judul" => "Warisan Sejarah<br>Arianisme",
+                "url-foto" => "https://pustaka.iainbukittinggi.ac.id/wp-content/uploads/2018/12/arian-198x300.jpg",
+                "harga" => "Rp97000,-",
+                "deskripsi" => "Judul asli:<br>Archetypal Heresy: Arianism Through the Centuries<br>Penulis: Maurice Wiles<br>Penerjemah: Zaenal Muttaqin<br>penerbit: Pustaka Matahari<br>Penerbit-asli: Oxford University Press, Inc."
+            ],
+            [
+                "judul"=> "Sejarah Filsafat Kontemporer:<br>Jerman dan Inggris",
+                "url-foto"=> "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551165807l/4309628._SX318_.jpg",
+                "harga"=> "Rp70000,-",
+                "deskripsi"=> "Penulis: K. Bertens<br>Penerbit: PT Gramedia Pustaka Utama"
+            ],
+            [
+                "judul" => "Sejarah Filsafat<br>Kontemporer: Prancis",
+                "url-foto" => "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1243418656l/6498943.jpg",
+                "harga" => "Rp63000,-",
+                "deskripsi" => "Penulis: K. Bertens<br>Penerbit: PT Gramedia Pustaka Utama"
+            ],
+            [
+                "judul" => "Semiotika dan<br>Hipersemiotika",
+                "url-foto" => "https://s2.bukalapak.com/img/7734600261/large/IMG_20170912_134621_scaled.jpg",
+                "harga" => "Rp120000,-",
+                "deskripsi" => "Penulis: Yasraf Amir Piliang<br>Penerbit: Pustaka Matahari"
+            ],
+            [
+                "judul" => "Epistemologi Dasar",
+                "url-foto" => "https://togamas.com/css/images/items/potrait/JPEGG_5905_Epistemologi_Dasar.jpg",
+                "harga" => "60000,-",
+                "deskripsi" => "Penulis: J. Sudarminta<br>Penerbit: Penerbit Kanisius"
+            ],
+            [
+                "judul" => "Teori-Teori Etika",
+                "url-foto" => "https://s2.bukalapak.com/img/2027491742/large/Buku_Teori_Teori_Etika_karya_Gordon_Graham.jpg",
+                "harga" => "Rp96000,-",
+                "deskripsi" => "Penulis: Nusamedia<br>Penerbit: Gordon Graham"
+            ]
+        ];
+        $_SESSION['items'] = $items;
+        $_SESSION['n_items'] = count($items);
+
+        //empty array indicates nothing yet insinde the cart
+        if(!isset($_SESSION['tocart'])){
+            $_SESSION['tocart'] = [];
+        }
+    ?>
+
+    <div class="container">
+        <div class="header">
+            <h1 id="header">Bukupedia</h1>
+            <a href="shopcart.php" class="logocontainer">
+                <span class="material-icons" id="shopchartlogo">
+                    shopping_cart
+                </span>
+            </a>
         </div>
-      </nav>
-    
-    
-    <img src="static/Boocoo.png" class="center">
-    <br>
-    <br>
+        <div class="heroBanner">
+            <div class="back" id="backbtn">
+                <h1>&#10094;</h1>
+            </div>
 
+            <a href='tocart.php' id="cart">
+                <div class="addtocart" id="cartbtn">
+                    Add to cart
+                </div>
+            </a>
+        
+            <div class="arrows" id="arrowscontainer">
+                <div class="arrow">
+                    <a href="navigate.php?direction=-1" id="leftnav">&#10094;</a>
+                </div>
 
-    <div class="card-deck" id="booklist">
-      
+                <div class="arrow">
+                    <a href="navigate.php?direction=1" id="rightnav">&#10095;</a>
+                </div>
+            </div>
+
+            <div class="productContainer">
+                <div class="image" id="gambar">
+                    <img src = '<?= $items[$_SESSION['idxNow']]['url-foto'] ?>' alt="buku" class="img" id="gambarbarang">
+                </div>
+
+                <div class="nameprice" id="namaharga">
+                    <h1 id="namabarang"><?= $items[$_SESSION['idxNow']]['judul'] ?></h1>
+                    <h3 id="hargabarang"><?= $items[$_SESSION['idxNow']]['harga'] ?></h3>
+                </div>
+
+                <div class="desc" id="deskripbarang">
+                    <h3 id="teksdeskripbarang"><?= $items[$_SESSION['idxNow']]['deskripsi'] ?></h3>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="books.json"></script>
-    <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body{
+    flex-grow: 1;
+    background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400%;
+    animation: gradient 25s infinite;
+
+    /* hide scrollbar untuk IE edge firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* hide scrollbar untuk chrome safari opera*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 4;
+}
+
+.back{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    top: 10%;
+    left: 5%;
+    transition-property: left;
+    transition-duration: 1s;
+}
+
+.back:hover{
+    left: 4%;
+}
+
+.listofitems{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: 15%;
+    left: 15%;
+    z-index: 3;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F6E4;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 450px;
+    margin-bottom: 60px;
+}
+
+img{
+    width: 300px;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E2E3D7;
+    height: 100%;
+}
+
+.desc{
+    /* flex-grow: 2; */
+    width: 60%;
+    padding-left: 10%;
+}
+
+.deleter{
+    flex-grow: 1;
+    text-align: center;
+    height: 100%;
+    width: 200px;
+    background-color: #EE7585;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deleter:hover{
+    background-color: #DC4256;
+}
+
+#delanchor{
+    width: 100%;
+    height: 100%;
+    padding-top:425px;
+    color: black;
+}
