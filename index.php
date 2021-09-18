@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
+    <link rel="shortcut icon" type="image/x-icon" href="logo/T.png" />
     <title>Tinkerwell</title>
+    
 </head>
 <body>
     <!-- start session to check if has logged in -->
@@ -26,7 +28,7 @@
         $items = [
             [
                 "judul" => "Laptop",
-                "url-foto" => "https://www.pngfind.com/pngs/m/306-3065236_keyboard-laptop-minimalist-keyboard-piano-laptops-laptop-screen.png",
+                "url-foto" => "logo/laptop.png",
                 "harga" => "Mulai dari Rp3.000.000",
                 "deskripsi" => "Laptop bekas berkualitas"
             ],

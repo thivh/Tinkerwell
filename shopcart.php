@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="shopcart.css">
 
+    <link rel="shortcut icon" type="image/x-icon" href="logo/T.png" />
     <title>Tinkerwell</title>
 </head>
 <body>
