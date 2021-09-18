@@ -15,7 +15,7 @@
     <?php
         session_start();
         if(!(isset($_SESSION['loggedIn'])) || $_SESSION['loggedIn'] !== true){
-            header('Location: http://localhost/wbd-2021-13519157-ryandito-diandaru/SimpleWebApp/login.php');
+            header('Location: login.php');
             exit;
         }
     ?>
